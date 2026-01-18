@@ -77,6 +77,7 @@ function initSection4SquaresAnime() {
   if (!section4) return;
 
   const play = () => {
+     const moveX = Math.min(160, Math.floor(window.innerWidth * 0.42));
     // ✅ resetear estado para que se vea desde el inicio SIEMPRE
     anime.set("#section4 #selector-demo .square", {
       translateX: 0,
@@ -86,7 +87,7 @@ function initSection4SquaresAnime() {
     // ✅ ejecutar animación
     anime({
       targets: "#section4 #selector-demo .square",
-      translateX: [-100, 150],
+      translateX: [-50, moveX],
       rotateY: [0, 360],
       duration: 1100,
       easing: "easeInOutQuad",
