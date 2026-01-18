@@ -13,11 +13,15 @@ html, body{
 .snap-section{
   height: 100vh;
   scroll-snap-align: start;
-
-  display: grid;
-  place-items: center;
-  text-align: center;
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
   color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .snap-section h1{
@@ -27,10 +31,10 @@ html, body{
 }
 
 /* Fondos */
-.s1{ background: linear-gradient(128deg,#40afff,#3f61ff); }
-.s2{ background: linear-gradient(128deg,#ff9a3f,#ff4b40); }
-.s3{ background: linear-gradient(128deg,#fc40ff,#543fff); }
-.s4{ background: linear-gradient(128deg,#40ffc3,#3fffd4); }
+.s1{ background-image: url(/img/nutricion.jpg); }
+.s2{ background-image: url(/img/nutricion2.jpg); }
+.s3{ background-image: url(/img/pexels-polina-tankilevitch-3872437.jpg); }
+.s4{ background-image: url(/img/fondo.jpg);}
 
 /* Dots */
 .dot-nav{
